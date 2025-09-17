@@ -1,0 +1,51 @@
+.header-page {
+    height: 100vh;
+    @include nav-bg;
+    .header-page-bg{
+        height: 100vh;
+        @include bg-header;
+        display: flex;
+    }
+    .header-page-2{
+        @include center-around;
+        .header-page-text-1{
+            width: 40%;
+            h5{
+                color: $orang-color;
+                font-size: 4vh;
+            }
+            h1{
+                color:$white-color;
+                font-size: 10vh;
+            }
+            .header-button-page{
+                display: flex;
+                overflow: hidden;
+                margin-top: 30px;
+                input{
+                    padding: 15px 15px;
+                    width: 50%;
+                    border-radius: 50px 0 0 50px;
+                    outline: none;
+                    border: none;
+                    cursor: pointer;
+                }
+                button{
+                    background-color: green;
+                    padding: 15px 25px;
+                    border-radius: 0 50px 50px 0;
+                    border: none;
+                    
+                    &:hover{
+                        background-color:$orangred-color;
+                        border: none;
+                        color: white;
+                    }
+                }
+            }
+        }
+        .header-page-img img{
+            width: 500px;
+        }
+    }
+}

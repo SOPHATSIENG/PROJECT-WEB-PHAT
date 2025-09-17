@@ -1,0 +1,81 @@
+.show-product{
+    height: 100vh;
+    @include center;
+    .group-product-show{
+        height: 80%;
+        width: 95%;
+        @include between;
+        .group-card-product{
+            @include o-d-a-f;
+            background: linear-gradient(to left top, rgb(225, 238, 210), rgb(3, 92, 58));
+            height: 100%;
+            width: 30%;
+            border-radius:10px;
+            border: 1px solid green;
+            &:hover{
+                transition: .5s;
+                box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 30px 4px;
+            }
+            .group-img-show-product img{
+                width: 100%;
+                border-radius: 10px;  
+            }
+            .group-text-show-product{
+                @include center;
+                @include show-product;
+                background-color: rgb(215, 235, 179);
+                h4{
+                    color: rgb(255, 255, 255);
+                }
+            }
+        }
+        .group-card-product-2{
+            @include o-d-a-f;
+            background: linear-gradient(to left top, rgb(239, 219, 225), rgb(251, 23, 103));
+            height: 100%;
+            width: 30%;
+            border-radius:10px;
+            border: 1px solid rgb(255, 91, 148);
+            &:hover{
+                transition: .5s;
+                box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 30px 4px;
+            }
+              .group-img-show-product img{
+                width: 100%;
+                border-radius: 10px;  
+            }
+            .group-text-show-product{
+                @include center;
+                @include show-product;
+                background-color: rgb(252, 131, 56);
+                h4{
+                    color: rgb(255, 255, 255);
+                }
+            }
+        }
+        .group-card-product-3{
+            @include o-d-a-f;
+            background: linear-gradient(to left top, rgb(89, 108, 100), rgb(208, 11, 11));
+            height: 100%;
+            width: 30%;
+            border-radius:10px;
+            border: 1px solid rgb(225, 33, 65);
+            &:hover{
+                transition: .5s;
+                box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 30px 4px;
+            }
+              .group-img-show-product img{
+                width: 100%;
+                border-radius: 10px;  
+            }
+            .group-text-show-product{
+                @include center;
+                @include show-product;
+                background-color: rgb(255, 255, 255);
+                h4{
+                    color: rgb(10, 151, 15);
+                }
+            }
+        }
+    }
+}

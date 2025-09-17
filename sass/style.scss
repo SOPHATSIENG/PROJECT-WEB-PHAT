@@ -1,0 +1,17 @@
+
+@import "./mixins";
+@import "./variable";
+@import "./compoment-home-page/values";
+@import "./compoment-home-page/header";
+@import "./compoment-home-page/nav";
+@import "./compoment-home-page/product";
+@import "./compoment-home-page/show-product";
+@import "./compoment-home-page/product-vegetable";
+
+
+
+*{
+    margin: 0;
+    scroll-behavior: smooth;
+    font-family: 'Roboto', 'Open Sans', Arial, sans-serif;
+}
