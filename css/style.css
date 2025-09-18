@@ -509,7 +509,7 @@
 }
 
 .Bestseller-Product {
-  height: 150vh;
+  height: 120vh;
 }
 .Bestseller-Product .bestseller-text-header {
   margin-top: 50px;
@@ -533,14 +533,14 @@
 }
 .Bestseller-Product .group-bestseller-product {
   width: 100%;
-  height: 70%;
+  height: 80%;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 .Bestseller-Product .group-bestseller-product .group-bestseller-product-2 {
   width: 90%;
-  height: 65%;
+  height: 70%;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -597,6 +597,87 @@
 }
 .Bestseller-Product .group-bestseller-product .group-bestseller-product-2 .card-bestseller-product .group-bestseller-element .price-button-2 i {
   font-size: 20px;
+}
+
+.feedback-page {
+  height: 150vh;
+}
+.feedback-page .group-header-feedback {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 18px;
+}
+.feedback-page .group-header-feedback h1 {
+  color: rgb(0, 53, 53);
+}
+.feedback-page .group-header-feedback h3 {
+  color: rgb(110, 175, 12);
+}
+.feedback-page .group-header-feedback .line-color-green-2 {
+  background-color: green;
+  width: 190px;
+  height: 1px;
+}
+.feedback-page .group-feedback-customer {
+  height: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.feedback-page .group-feedback-customer .group-feedback-customer-2 {
+  width: 90%;
+  height: 65%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.feedback-page .group-feedback-customer .group-feedback-customer-2 .card-feedback {
+  background-color: rgb(237, 240, 243);
+  width: 48%;
+  height: 35vh;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+}
+.feedback-page .group-feedback-customer .group-feedback-customer-2 .card-feedback .text-feedback {
+  padding: 15px;
+  width: 90%;
+  margin: auto;
+  font-weight: 100;
+  font-size: 11px;
+  border-bottom: 1px solid orange;
+  color: gray;
+}
+.feedback-page .group-feedback-customer .group-feedback-customer-2 .card-feedback .group-name-feedback-customer {
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: auto;
+}
+.feedback-page .group-feedback-customer .group-feedback-customer-2 .card-feedback .group-name-feedback-customer .feedback-img {
+  display: flex;
+  gap: 20px;
+}
+.feedback-page .group-feedback-customer .group-feedback-customer-2 .card-feedback .group-name-feedback-customer .feedback-img img {
+  width: 80px;
+  height: 80px;
+  border-radius: 10px;
+}
+.feedback-page .group-feedback-customer .group-feedback-customer-2 .card-feedback .group-name-feedback-customer .feedback-img .feedback-name {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.feedback-page .group-feedback-customer .group-feedback-customer-2 .card-feedback .group-name-feedback-customer .feedback-img .group-icon-3 {
+  color: orange;
+}
+.feedback-page .group-feedback-customer .group-feedback-customer-2 .card-feedback .group-name-feedback-customer .group-icon-feedback {
+  font-size: 35px;
+  color: orange;
 }
 
 * {

@@ -1,0 +1,73 @@
+.feedback-page{
+    height: 150vh;
+    .group-header-feedback{
+        @include center;
+        flex-direction: column;
+        gap: 18px;
+        h1{
+            color: rgb(0, 53, 53);
+        }
+        h3{
+            color: rgb(110, 175, 12);
+        }
+        .line-color-green-2{
+            background-color: green;
+            width: 190px;
+            height: 1px;
+        }
+    }
+    .group-feedback-customer{
+        height: 80%;
+        @include center;
+        .group-feedback-customer-2{
+            width: 90%;
+            height: 65%;
+            @include center-around;
+            flex-wrap: wrap;
+            .card-feedback{
+                background-color: rgb(237, 240, 243);
+                width: 48%;
+                height: 35vh;
+                border-radius: 20px;
+                display: flex;
+                flex-direction: column;
+                .text-feedback{
+                    padding: 15px;
+                    width: 90%;
+                    margin: auto;
+                    font-weight: 100;
+                    font-size: 11px;
+                    border-bottom:1px solid orange ;
+                    color: gray;
+                }
+                .group-name-feedback-customer{
+                    width: 90%;
+                    @include between;
+                    margin: auto;
+                    .feedback-img{
+                        display: flex;
+                        gap: 20px;
+                        img{
+                            width: 80px;
+                            height: 80px;
+                            border-radius: 10px;
+                        }
+                        .feedback-name{
+                            display: flex;
+                            flex-direction: column;
+                            gap: 5px;
+                        }
+                        .group-icon-3{
+                            color: orange;
+                        }
+                    }
+                    .group-icon-feedback{
+                        font-size: 35px;
+                        color: orange;
+                    }
+                }
+            }
+
+        }
+    }
+}
