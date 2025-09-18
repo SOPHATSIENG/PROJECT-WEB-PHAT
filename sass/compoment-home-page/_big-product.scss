@@ -1,0 +1,69 @@
+.big-page-product{
+    height: 100vh;
+    background-color: cadetblue;
+    @include center;
+    .group-big-page-product{
+        width: 100%;
+        height: 100%;
+        
+        background-color: orange;
+        @include center-around;
+        .group-big-page-product-text{
+            width: 40%;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            h1{
+                font-size: 10vh;
+                color: $white-color;
+            }
+            .h1-big-page{
+                color: teal;
+                font-weight: 200;
+            }
+            h5{
+                font-weight: 200;
+            }
+            .button-page-big-product{
+                width: 20%;
+                border: 2px solid rgb(255, 255, 255);
+                padding: 15px;
+                border-radius: 50px;
+                background-color: orange;
+                &:hover{
+                background-color: orangered;
+                box-shadow: 1px 2px 30px orangered;
+                color: white;
+            }
+            } 
+        }
+        .group-price-page-big{
+            background-color: white;
+            width: 100px;
+            height: 100px;
+            border-radius: 50px;
+            margin-left: 50px;
+            margin-top: 30px;
+            @include center;
+            h1{
+                font-size: 10vh;
+            }
+            .kg {
+                @include center;
+                flex-direction: column;  
+            }
+            h3{
+                color: gray;
+            }
+           
+        }
+        .group-big-page-product-img{
+            background: url(/image/19.png);
+            width: 40%;
+            height: 100%;
+            flex-direction: column;
+            
+        }
+    }
+
+}
