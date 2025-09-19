@@ -1,0 +1,70 @@
+footer{
+    height: 70vh;
+    background-color: rgb(72, 87, 87);
+    .card-footer-1{
+        width: 90%;
+        @include between;
+        margin: auto;
+        padding: 30px 0px;
+        border-bottom: 1px solid orange;
+        .text-footer-1{
+            h1{
+                color: rgb(104, 162, 17);
+            }
+            h5{
+                color: orange;
+            }
+        }
+        .footer-group-icon{
+            font-size: 15px;
+            i{
+                color: rgb(14, 196, 14);
+                padding: 5px;
+                border-radius: 20px;
+                border: 1px solid rgb(110, 169, 20);
+                &:hover{
+                    background-color: rgb(247, 214, 51);
+                    transition: .5s;
+                    color: white;
+                    transform: translateY(-2px);
+                }
+            }
+        }
+    }
+    .cardfooter-2{
+        width: 90%;
+        height: 40vh;
+        margin: auto;
+        @include between;
+        .groud-kind-of-footer{
+            height: 70%;
+            width: 23%;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            h3{
+                color: white;
+            }
+            h5{
+                color: rgb(195, 195, 195);
+                font-weight: 100;
+            }
+            img{
+                width: 170px;
+            }
+        }
+    }
+    .card-footer-3{
+        width: 90%;
+        @include between;
+        margin: auto;
+        h5{
+            font-weight: 100;
+            display: flex;
+            color:rgb(195, 195, 195) ;
+            p{
+                color: rgb(3, 156, 3);
+            }
+        }
+    }
+}

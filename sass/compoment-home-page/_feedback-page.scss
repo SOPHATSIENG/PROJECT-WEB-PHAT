@@ -1,5 +1,5 @@
 .feedback-page{
-    height: 150vh;
+    height: 130vh;
     .group-header-feedback{
         @include center;
         flex-direction: column;
@@ -21,7 +21,7 @@
         @include center;
         .group-feedback-customer-2{
             width: 90%;
-            height: 65%;
+            height: 75%;
             @include center-around;
             flex-wrap: wrap;
             .card-feedback{

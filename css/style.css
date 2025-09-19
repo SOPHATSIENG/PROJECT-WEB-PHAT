@@ -1,3 +1,78 @@
+footer {
+  height: 70vh;
+  background-color: rgb(72, 87, 87);
+}
+footer .card-footer-1 {
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: auto;
+  padding: 30px 0px;
+  border-bottom: 1px solid orange;
+}
+footer .card-footer-1 .text-footer-1 h1 {
+  color: rgb(104, 162, 17);
+}
+footer .card-footer-1 .text-footer-1 h5 {
+  color: orange;
+}
+footer .card-footer-1 .footer-group-icon {
+  font-size: 15px;
+}
+footer .card-footer-1 .footer-group-icon i {
+  color: rgb(14, 196, 14);
+  padding: 5px;
+  border-radius: 20px;
+  border: 1px solid rgb(110, 169, 20);
+}
+footer .card-footer-1 .footer-group-icon i:hover {
+  background-color: rgb(247, 214, 51);
+  transition: 0.5s;
+  color: white;
+  transform: translateY(-2px);
+}
+footer .cardfooter-2 {
+  width: 90%;
+  height: 40vh;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+footer .cardfooter-2 .groud-kind-of-footer {
+  height: 70%;
+  width: 23%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+footer .cardfooter-2 .groud-kind-of-footer h3 {
+  color: white;
+}
+footer .cardfooter-2 .groud-kind-of-footer h5 {
+  color: rgb(195, 195, 195);
+  font-weight: 100;
+}
+footer .cardfooter-2 .groud-kind-of-footer img {
+  width: 170px;
+}
+footer .card-footer-3 {
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: auto;
+}
+footer .card-footer-3 h5 {
+  font-weight: 100;
+  display: flex;
+  color: rgb(195, 195, 195);
+}
+footer .card-footer-3 h5 p {
+  color: rgb(3, 156, 3);
+}
+
 .value-page {
   height: 80vh;
   display: flex;
@@ -600,7 +675,7 @@
 }
 
 .feedback-page {
-  height: 150vh;
+  height: 130vh;
 }
 .feedback-page .group-header-feedback {
   display: flex;
@@ -628,7 +703,7 @@
 }
 .feedback-page .group-feedback-customer .group-feedback-customer-2 {
   width: 90%;
-  height: 65%;
+  height: 75%;
   display: flex;
   justify-content: space-around;
   align-items: center;
