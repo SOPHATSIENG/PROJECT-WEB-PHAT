@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+}
+.first-container{
+    @include position-nav;
+    background-color:$red-color;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    .first-container-2{
+        background: $two-color;
+        border-radius: 0px 500px;
+        @include center-around;
+    }
+    .f-c-card-page{
+        ul{
+            display: flex;
+            gap: 40px;
+            list-style: none;
+            a{
+                text-decoration: none;
+                font-size: 4vh;
+                &:hover{
+                    color: $red-color;
+                }
+            }
+        }
+    }
+    .f-c-img img {
+        @include h-w-100vh;
+        border-radius: 50%;
+        border: 3px solid green;
+    }
+    .f-c-icon{
+        color:$orangred-color;
+        font-size: 40px;
+        i:hover{
+            color: $green-color;
+        }
+    }
+}

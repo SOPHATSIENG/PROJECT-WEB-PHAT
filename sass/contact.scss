@@ -1,0 +1,10 @@
+@import "./mixins";
+@import "./variable";
+@import"./component-contact-page/nav";
+@import"./component-contact-page/header-page";
+
+*{
+    margin: 0;
+    scroll-behavior: smooth;
+    font-family: 'Roboto', 'Open Sans', Arial, sans-serif;
+}
