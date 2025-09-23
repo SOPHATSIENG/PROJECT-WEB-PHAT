@@ -1,7 +1,9 @@
 @import "./mixins";
 @import "./variable";
+@import "./footer";
 @import"./component-contact-page/nav";
 @import"./component-contact-page/header-page";
+@import"./component-contact-page/contact-page";
 
 *{
     margin: 0;

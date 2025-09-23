@@ -1,0 +1,118 @@
+.contact-page{
+    height: 230vh;
+    @include center;
+    .card-contact-page{
+        background-color: rgba(183, 190, 190, 0.477);
+        border-radius: 15px;
+        width: 90%;
+        height: 80%;
+        @include center;
+        flex-direction: column;
+        .header-contact-page{
+            @include center;
+            flex-direction: column;
+            gap:5px;
+            h1{
+                font-weight: 200;
+                color: rgb(116, 184, 13);
+                
+            }
+            .header-page-text{
+                width: 47%;
+                text-align: center;
+                padding: 25px;
+                h5{
+                    font-weight: 100;
+                    color: gray;
+                }
+            }
+        }
+        .map-page{
+            @include center;
+            width: 100%;
+            iframe{
+                width: 94%;
+                border-radius: 20px;
+            }
+        }
+        .page-form{
+            padding-top: 35px;
+            display: flex;
+            width: 94%;
+            @include between;
+            .form-page{
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+                width: 50%;
+                input{
+                    padding: 14px;
+                    border-radius: 15px;
+                    border: none;
+                   
+                    
+                }
+                textarea{
+                    height: 20vh;
+                    padding: 15px;
+                    border-radius: 14px;
+                    border: none;
+                }
+                .button-page{
+                    border: none;
+                    padding: 15px;
+                    border-radius: 20px;
+                    border: 1px solid orange;
+                    &:hover{
+                        background-color: orange;
+                        transition: .5s;
+                        color: white;
+                    }
+                }
+
+            }
+            
+        }
+        .group-card-page-contact{
+            padding-top: 6px;
+            width: 48%;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            .group-card-page-form{
+                background-color: rgba(255, 255, 255, 0.752);
+                width: 100%;
+                height: 18vh;
+                border-radius: 10px;
+                display: flex;
+                align-items: center;
+                &:hover{
+                    transform: translateY(-5px);
+                    transition: .5s;
+                }
+                .card-address{
+                    display: flex;
+                    gap: 15px;
+                    padding-left: 30px;
+                    i{
+                        font-size: 30px;
+                        color: rgb(102, 160, 14);
+                    }
+                    .card-address-2{
+                        display: flex;
+                        flex-direction: column;
+                        gap: 10px;
+                        h2{
+                            font-weight: 200;
+                            color: gray;
+                        }
+                        p{
+                            font-weight: 100;
+                            color: gray;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
