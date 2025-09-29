@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shopping Cart</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 40px;
+      background: #f9f9f9;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      background: #fff;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+
+    th, td {
+      padding: 15px;
+      text-align: left;
+      border-bottom: 1px solid #ddd;
+      font-size: 16px;
+    }
+
+    th {
+      font-weight: bold;
+      color: #555;
+    }
+
+    td img {
+      width: 80px;
+      height: 80px;
+      border-radius: 10px;
+      object-fit: cover;
+    }
+
+    tr:hover {
+      background: #f1f1f1;
+    }
+
+    .subtotal {
+      text-align: right;
+      font-weight: bold;
+      font-size: 18px;
+      padding: 20px;
+    }
+
+    .subtotal-value {
+      font-weight: bold;
+      font-size: 18px;
+    }
+  </style>
+</head>
+<body>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Products</th>
+        <th>Name</th>
+        <th>Price</th>
+        <th>Quantity</th>
+        <th>Total</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><img src="https://i.ibb.co/5MfmK5H/broccoli.jpg" alt="Broccoli"></td>
+        <td>Awesome Brocoli</td>
+        <td>$69.00</td>
+        <td>2</td>
+        <td>$138.00</td>
+      </tr>
+      <tr>
+        <td><img src="https://i.ibb.co/kS0HjtY/potato.jpg" alt="Potatoes"></td>
+        <td>Potatoes</td>
+        <td>$69.00</td>
+        <td>2</td>
+        <td>$138.00</td>
+      </tr>
+      <tr>
+        <td><img src="https://i.ibb.co/8dPtZkQ/banana.jpg" alt="Banana"></td>
+        <td>Big Banana</td>
+        <td>$69.00</td>
+        <td>2</td>
+        <td>$138.00</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div class="subtotal">
+    Subtotal <span class="subtotal-value">$414.00</span>
+  </div>
+
+</body>
+</html>

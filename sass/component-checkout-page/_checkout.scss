@@ -1,23 +1,23 @@
 .checkout-page{
-    background-color: cadetblue;
-    height: 200vh;
+    height: 250vh;
     width: 100%;
     @include center;
     flex-direction: column;
     .header-checkout-page{
         padding-bottom: 50px;
+        h1{
+            color: rgb(88, 160, 16);
+            border-bottom: 3px solid gray;
+        }
     }
     .group-all-element {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(5, 1fr);
     gap: 8px;
     height: 80%;
     width: 90%;
     .form-for-oder {
-        background-color: antiquewhite;
         grid-column: span 3 / span 3;
-        grid-row: span 5 / span 5;
         gap: 30px;
         display: flex;
         flex-direction: column;
@@ -28,12 +28,19 @@
                 display: flex;
                 flex-direction: column;
                 input{
-                    width: 54vh;
+                    width: 54.9vh;
                     padding: 10px;
-                    border-radius: 15px;
-                    border: none;
+                    border-radius: 5px;
+                    border: 1px solid rgb(79, 161, 194);
+                    outline: 1px solid rgb(116, 180, 21);
                 }
                 }
+            }
+            textarea{
+                height: 30vh;
+                border: 1px solid rgb(71, 152, 184);
+                outline: 1px solid rgb(116, 180, 21);
+                border-radius: 5px;
             }
         }
         .input-name-3{
@@ -42,17 +49,94 @@
             gap: 10px;
             input{
                 padding: 10px;
-                border-radius: 15px;
-                border: none;
+                border-radius: 5px;
+                border: 1px solid rgb(71, 158, 193);
+                outline: 1px solid rgb(116, 180, 21);
             }
         }
     }  
     .table-checkout {
-        background-color: azure;
         grid-column: span 2 / span 2;
-        grid-row: span 5 / span 5;
         grid-column-start: 4;
+        table {
+        width: 100%;
+        border-collapse: collapse;
+        // box-shadow: 0 2px 6px rgba(0,0,0,0.1);
         }
+
+    th, td {
+        padding: 15px;
+        text-align: left;
+        border-bottom: 1px solid #ddd;
+        font-size: 16px;
+        }
+
+    th {
+        font-weight: bold;
+        color: #555;
+        }
+
+    td img {
+        width: 80px;
+        height: 80px;
+        border-radius: 10px;
+        object-fit: cover;
+        }
+
+    tr:hover {
+        background: #f1f1f1;
+        }
+
+    .subtotal {
+        text-align: right;
+        font-weight: bold;
+        font-size: 18px;
+        padding: 20px;
+        border-bottom:1px solid #ddd;
+        }
+
+    .subtotal-value {
+        font-weight: bold;
+        font-size: 18px;
+        }
+    }
+    .checkbox{
+        padding: 20px;
+        border-bottom: 1px solid #ddd;
+        .checkbox-text{
+            display: flex;
+            gap: 10px;
+            padding-bottom: 20px;
+        }
+
+    }
+    .checkbox-2{
+        padding: 20px;
+        border-bottom: 1px solid #ddd;
+         .checkbox-text{
+            display: flex;
+            gap: 10px;
+        }
+    }
+    .button-pay{
+        padding-top: 50px;
+        button{
+            width: 100%;
+            border: 1px solid orange;
+            padding: 15px;
+            border-radius: 5px;
+            text-transform: uppercase;
+            background-color: white;
+            color: rgb(34, 171, 34);
+            &:hover{
+                background-color: orange;
+                transition: .5s;
+                color: white;
+                border: 1px solid rgb(0, 0, 0);
+            }
+        }
+    }
+
     
 }
 

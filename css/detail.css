@@ -141,4 +141,10 @@ footer .card-footer-3 h5 p {
 }
 .header-page .header-page-2 h5 p {
   color: white;
+}
+
+* {
+  margin: 0;
+  scroll-behavior: smooth;
+  font-family: "Roboto", "Open Sans", Arial, sans-serif;
 }/*# sourceMappingURL=detail.css.map */
