@@ -1,7 +1,11 @@
 @import"./mixins";
 @import "./variable";
+@import "./footer";
 @import"./component-shop-page/nav";
 @import"./component-shop-page/header";
+@import"./component-shop-page/product-page";
+@import"./component-shop-page/feedback-custumer";
+@import"./component-shop-page/product-fruits";
 
 
 *{

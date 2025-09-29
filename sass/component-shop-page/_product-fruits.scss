@@ -1,0 +1,76 @@
+.product-page-fruits{
+    height: 210vh;
+    .product-text{
+        text-align: center;
+        @include center;
+        flex-direction: column;
+        gap: 10px;
+        .line-color-green{
+            background-color: $green-color;
+            height: 2px;
+            margin: 5px 0;
+            width: 250px
+        }
+    }
+    .product-page-2{
+        margin: 100px 50px 0px 50px;
+        @include between;
+        flex-wrap: wrap;
+        height: 80%;
+        .card-product{
+            overflow: hidden;
+            width: 24%;
+            height: 80vh;
+            border: 1px solid $orang-color;
+            border-radius: 15px;
+            background-color: $white-color;
+            &:hover{
+                transition: .5s;
+                box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 30px 4px;
+            }
+            .card-product-img img{
+                width:100%;
+                height:50%;
+                &:hover{
+                    transform: scaleX(1.2);
+                    transition: .5s;
+                    overflow: hidden;
+                }
+                
+            }
+            .card-product-text{
+                text-align: center;
+                display: flex;
+                @include gap-col;  
+                margin-top: 20px;
+                color: rgb(97, 95, 95);
+            }
+            .card-product-price{
+                del{
+                    color: red;
+                }
+                @include center;
+                @include gap-col;             
+                margin-top: 20px;
+                color: rgb(97, 95, 95);
+                .card-product-button{
+                    @include center-around;
+                    width: 70%;
+                    padding: 10px;
+                    border-radius: 20px;
+                    border: 1px solid $orang-color;
+                    color: rgb(128, 211, 55);
+                    i{
+                        font-size: 23px;
+                    }
+                    &:hover{
+                        background-color: orangered;
+                        box-shadow: 2px 3px 20px orangered;
+                        color: white;
+                    }
+
+                }
+            }
+        }
+    }
+}
