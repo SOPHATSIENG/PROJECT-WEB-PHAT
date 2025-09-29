@@ -1,0 +1,61 @@
+.checkout-page{
+    background-color: cadetblue;
+    height: 200vh;
+    width: 100%;
+    @include center;
+    flex-direction: column;
+    .header-checkout-page{
+        padding-bottom: 50px;
+    }
+    .group-all-element {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    gap: 8px;
+    height: 80%;
+    width: 90%;
+    .form-for-oder {
+        background-color: antiquewhite;
+        grid-column: span 3 / span 3;
+        grid-row: span 5 / span 5;
+        gap: 30px;
+        display: flex;
+        flex-direction: column;
+        .input-name{
+            display: flex;
+            gap: 30px;
+            .input-name-2{
+                display: flex;
+                flex-direction: column;
+                input{
+                    width: 54vh;
+                    padding: 10px;
+                    border-radius: 15px;
+                    border: none;
+                }
+                }
+            }
+        }
+        .input-name-3{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            input{
+                padding: 10px;
+                border-radius: 15px;
+                border: none;
+            }
+        }
+    }  
+    .table-checkout {
+        background-color: azure;
+        grid-column: span 2 / span 2;
+        grid-row: span 5 / span 5;
+        grid-column-start: 4;
+        }
+    
+}
+
+    
+
+
