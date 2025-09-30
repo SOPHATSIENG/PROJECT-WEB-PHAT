@@ -1,0 +1,109 @@
+.page-product-detail {
+    height: 100vh;
+    width: 100%;
+    @include center;
+    flex-direction: column;
+    gap: 50px;
+    padding-top: 30px;
+    h1{
+        display: flex;
+        gap: 13px;
+        color: rgb(100, 165, 2);
+        .boder{
+            border-bottom: 5px solid rgb(252, 158, 7);
+        }
+    }
+    .group-product-page {
+        animation: scroll 10s linear infinite;
+        width: 90%;
+        height: 100%;
+
+        // background-color: rgb(204, 240, 241);
+        .group-product-vegetable {
+            height: 90%;
+            @include between;
+            flex-wrap: wrap;
+
+            .card-producr-vegetable {
+                background-color: white;
+                width: 24%;
+                height: 76vh;
+                overflow: hidden;
+                border-radius: 15px;
+                border: 1px solid green;
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+
+                &:hover {
+                    transition: .5s;
+                    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 30px 4px;
+                }
+
+                .card-vegetable-image img {
+                    width: 100%;
+
+                    &:hover {
+                        transform: scaleX(1.2);
+                        transition: .5s;
+                        overflow: hidden;
+                    }
+                }
+
+                .card-text-product-button {
+                    margin-left: 15px;
+                    margin-right: 15px;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 10px;
+
+                    h2,
+                    p {
+                        color: gray
+                    }
+                }
+
+                .group-price-vegetable {
+                    @include between;
+                    gap: 10px;
+
+                    h3 {
+                        color: gray;
+                    }
+
+                    .card-product-button {
+                        padding: 10px;
+                        @include center-around;
+                        width: 60%;
+                        border-radius: 15px;
+                        border: 1px solid orange;
+                        color: rgb(118, 176, 32);
+
+                        i {
+                            font-size: 20px;
+                        }
+
+                        &:hover {
+                            background-color: orangered;
+                            box-shadow: 2px 3px 20px orangered;
+                            color: $white-color;
+                        }
+                    }
+                }
+            }
+        }
+        @keyframes scroll {
+            100% {
+                transform: translateX(10%);
+            }
+
+            20% {
+                transform: translateX(2%);
+            }
+
+            100% {
+                transform: translateX(0);
+            }
+        }
+    }
+}
