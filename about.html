@@ -3,97 +3,143 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Shopping Cart</title>
+  <title>Fruit Shop</title>
   <style>
-    body {
+    /* Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
       font-family: Arial, sans-serif;
-      margin: 40px;
-      background: #f9f9f9;
     }
 
-    table {
-      width: 100%;
-      border-collapse: collapse;
+    body {
       background: #fff;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      color: #333;
     }
 
-    th, td {
-      padding: 15px;
-      text-align: left;
-      border-bottom: 1px solid #ddd;
-      font-size: 16px;
+    /* Navbar */
+    header {
+      background: linear-gradient(to right, orange, yellow);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 20px;
+      flex-wrap: wrap;
     }
 
-    th {
+    header img {
+      height: 50px;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    nav ul li {
+      display: inline;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #fff;
       font-weight: bold;
-      color: #555;
+      transition: color 0.3s;
     }
 
-    td img {
-      width: 80px;
-      height: 80px;
-      border-radius: 10px;
-      object-fit: cover;
+    nav ul li a:hover {
+      color: #333;
     }
 
-    tr:hover {
-      background: #f1f1f1;
+    /* Cards Section */
+    .services {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+      padding: 40px 20px;
     }
 
-    .subtotal {
-      text-align: right;
-      font-weight: bold;
-      font-size: 18px;
+    .card {
+      background: #f0fafa;
       padding: 20px;
+      border-radius: 10px;
+      text-align: center;
+      transition: transform 0.3s, box-shadow 0.3s;
     }
 
-    .subtotal-value {
-      font-weight: bold;
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+    }
+
+    .card i {
+      font-size: 40px;
+      color: orange;
+      margin-bottom: 10px;
+    }
+
+    .card h3 {
       font-size: 18px;
+      margin-bottom: 10px;
+    }
+
+    .card p {
+      font-size: 14px;
+      color: #666;
+    }
+
+    /* Responsive Navbar */
+    @media (max-width: 768px) {
+      nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+      }
     }
   </style>
+
+  <!-- Font Awesome for icons -->
 </head>
 <body>
+  <!-- Navbar -->
+  <header>
+    <img src="logo.png" alt="Fruit Logo">
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Shop</a></li>
+        <li><a href="#">Shop Detail</a></li>
+        <li><a href="#">Checkout</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
-  <table>
-    <thead>
-      <tr>
-        <th>Products</th>
-        <th>Name</th>
-        <th>Price</th>
-        <th>Quantity</th>
-        <th>Total</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><img src="https://i.ibb.co/5MfmK5H/broccoli.jpg" alt="Broccoli"></td>
-        <td>Awesome Brocoli</td>
-        <td>$69.00</td>
-        <td>2</td>
-        <td>$138.00</td>
-      </tr>
-      <tr>
-        <td><img src="https://i.ibb.co/kS0HjtY/potato.jpg" alt="Potatoes"></td>
-        <td>Potatoes</td>
-        <td>$69.00</td>
-        <td>2</td>
-        <td>$138.00</td>
-      </tr>
-      <tr>
-        <td><img src="https://i.ibb.co/8dPtZkQ/banana.jpg" alt="Banana"></td>
-        <td>Big Banana</td>
-        <td>$69.00</td>
-        <td>2</td>
-        <td>$138.00</td>
-      </tr>
-    </tbody>
-  </table>
-
-  <div class="subtotal">
-    Subtotal <span class="subtotal-value">$414.00</span>
-  </div>
-
+  <!-- Services Section -->
+  <section class="services">
+    <div class="card">
+      <i class="fas fa-car"></i>
+      <h3>Free Shipping</h3>
+      <p>Free on order over $300</p>
+    </div>
+    <div class="card">
+      <i class="fas fa-shield-alt"></i>
+      <h3>Security Payment</h3>
+      <p>100% security payment</p>
+    </div>
+    <div class="card">
+      <i class="fas fa-exchange-alt"></i>
+      <h3>30 Day Return</h3>
+      <p>30 day money can return back</p>
+    </div>
+    <div class="card">
+      <i class="fas fa-phone"></i>
+      <h3>24/7 Support</h3>
+      <p>Support every time fast</p>
+    </div>
+  </section>
 </body>
 </html>

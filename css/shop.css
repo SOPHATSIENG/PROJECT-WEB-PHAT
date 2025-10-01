@@ -202,7 +202,8 @@ footer .card-footer-3 h5 p {
   flex-direction: column;
   gap: 10px;
 }
-.product-page .group-product-page .group-product-vegetable .card-producr-vegetable .card-text-product-button h2, .product-page .group-product-page .group-product-vegetable .card-producr-vegetable .card-text-product-button p {
+.product-page .group-product-page .group-product-vegetable .card-producr-vegetable .card-text-product-button h2,
+.product-page .group-product-page .group-product-vegetable .card-producr-vegetable .card-text-product-button p {
   color: gray;
 }
 .product-page .group-product-page .group-product-vegetable .card-producr-vegetable .group-price-vegetable {
@@ -408,4 +409,43 @@ footer .card-footer-3 h5 p {
   margin: 0;
   scroll-behavior: smooth;
   font-family: "Roboto", "Open Sans", Arial, sans-serif;
+}
+
+@media (max-width: 1440px) and (min-width: 1290px) {
+  .product-page {
+    height: 150vh;
+  }
+  .product-page .group-product-page {
+    height: 78%;
+  }
+  .product-page .group-product-page .group-product-vegetable {
+    height: 100%;
+  }
+  .product-page .group-product-page .group-product-vegetable .card-producr-vegetable {
+    height: 55vh;
+  }
+  .product-page-fruits {
+    height: 150vh;
+  }
+  .product-page-fruits .product-page-2 {
+    height: 78%;
+  }
+  .product-page-fruits .product-page-2 .card-product {
+    height: 55vh;
+  }
+  .feedback-page {
+    height: 100vh;
+  }
+  .feedback-page .group-feedback-customer {
+    height: 90%;
+  }
+  .feedback-page .group-feedback-customer .group-feedback-customer-2 {
+    height: 75%;
+  }
+  .feedback-page .group-feedback-customer .group-feedback-customer-2 .card-feedback {
+    height: 30vh;
+  }
+  footer {
+    height: 60vh;
+  }
 }/*# sourceMappingURL=shop.css.map */

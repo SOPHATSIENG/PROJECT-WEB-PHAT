@@ -764,4 +764,67 @@ footer .card-footer-3 h5 p {
   margin: 0;
   scroll-behavior: smooth;
   font-family: "Roboto", "Open Sans", Arial, sans-serif;
+}
+
+@media (max-width: 1440px) and (min-width: 1290px) {
+  .value-page {
+    height: 70vh;
+  }
+  .value-page .value-page-2 {
+    height: 35vh;
+  }
+  .product-page {
+    height: 140vh;
+  }
+  .product-page .product-page-2 {
+    height: 85%;
+  }
+  .product-page .product-page-2 .card-product {
+    height: 53vh;
+  }
+  .show-product {
+    height: 100vh;
+  }
+  .show-product .group-product-show {
+    height: 60%;
+  }
+  .product-vegetable {
+    height: 160vh;
+  }
+  .product-vegetable .group-product-vegetable {
+    height: 75%;
+  }
+  .product-vegetable .group-product-vegetable .card-producr-vegetable {
+    height: 55vh;
+  }
+  .big-page-product {
+    height: 70vh;
+  }
+  .Bestseller-Product {
+    height: 100vh;
+  }
+  .Bestseller-Product .group-bestseller-product {
+    height: 80%;
+  }
+  .Bestseller-Product .group-bestseller-product .group-bestseller-product-2 {
+    height: 70%;
+  }
+  .Bestseller-Product .group-bestseller-product .group-bestseller-product-2 .card-bestseller-product {
+    height: 25vh;
+  }
+  .feedback-page {
+    height: 100vh;
+  }
+  .feedback-page .group-feedback-customer {
+    height: 90%;
+  }
+  .feedback-page .group-feedback-customer .group-feedback-customer-2 {
+    height: 75%;
+  }
+  .feedback-page .group-feedback-customer .group-feedback-customer-2 .card-feedback {
+    height: 30vh;
+  }
+  footer {
+    height: 60vh;
+  }
 }/*# sourceMappingURL=style.css.map */

@@ -358,4 +358,34 @@ footer .card-footer-3 h5 p {
   margin: 0;
   scroll-behavior: smooth;
   font-family: "Roboto", "Open Sans", Arial, sans-serif;
+}
+
+@media (max-width: 1440px) and (min-width: 1290px) {
+  .Detail {
+    height: 100vh;
+  }
+  .page-product-detail {
+    height: 80vh;
+  }
+  .page-product-detail .group-product-page {
+    height: 100%;
+  }
+  .page-product-detail .group-product-page .group-product-vegetable {
+    height: 90%;
+  }
+  .page-product-detail .group-product-page .group-product-vegetable .card-producr-vegetable {
+    height: 56vh;
+  }
+  .product-page-fruits {
+    height: 150vh;
+  }
+  .product-page-fruits .product-page-2 {
+    height: 78%;
+  }
+  .product-page-fruits .product-page-2 .card-product {
+    height: 55vh;
+  }
+  footer {
+    height: 60vh;
+  }
 }/*# sourceMappingURL=detail.css.map */

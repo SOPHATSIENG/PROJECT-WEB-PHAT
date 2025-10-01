@@ -10,3 +10,15 @@
     scroll-behavior: smooth;
     font-family: 'Roboto', 'Open Sans', Arial, sans-serif;
 }
+
+
+@media (max-width: 1440px) and (min-width:1290px) {
+    .checkout-page{
+        height: 170vh;
+    }
+
+    footer{
+        height: 60vh;
+    }
+    
+ }
