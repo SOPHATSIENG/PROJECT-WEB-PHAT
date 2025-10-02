@@ -36,4 +36,18 @@
             color: $green-color;
         }
     }
+    .hamburger {
+      display: none;
+      flex-direction: column;
+      cursor: pointer;
+    }
+
+    .hamburger span {
+      height: 5px;
+      width: 35px;
+      background: purple;
+      margin: 4px 0;
+      border-radius: 3px;
+      transition: 0.3s;
+    }
 }

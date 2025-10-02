@@ -3,143 +3,52 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Fruit Shop</title>
+  <title>UseAnimations Example</title>
+  <!-- Lottie Player script -->
+  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
   <style>
-    /* Reset */
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: Arial, sans-serif;
-    }
-
     body {
-      background: #fff;
-      color: #333;
-    }
-
-    /* Navbar */
-    header {
-      background: linear-gradient(to right, orange, yellow);
       display: flex;
-      justify-content: space-between;
+      justify-content: center;
       align-items: center;
-      padding: 10px 20px;
-      flex-wrap: wrap;
+      height: 100vh;
+      background: #f0f0f0;
     }
-
-    header img {
-      height: 50px;
-    }
-
-    nav ul {
-      list-style: none;
-      display: flex;
-      gap: 20px;
-      flex-wrap: wrap;
-    }
-
-    nav ul li {
-      display: inline;
-    }
-
-    nav ul li a {
-      text-decoration: none;
-      color: #fff;
-      font-weight: bold;
-      transition: color 0.3s;
-    }
-
-    nav ul li a:hover {
-      color: #333;
-    }
-
-    /* Cards Section */
-    .services {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 20px;
-      padding: 40px 20px;
-    }
-
-    .card {
-      background: #f0fafa;
-      padding: 20px;
-      border-radius: 10px;
-      text-align: center;
-      transition: transform 0.3s, box-shadow 0.3s;
-    }
-
-    .card:hover {
-      transform: translateY(-5px);
-      box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
-    }
-
-    .card i {
-      font-size: 40px;
-      color: orange;
-      margin-bottom: 10px;
-    }
-
-    .card h3 {
-      font-size: 18px;
-      margin-bottom: 10px;
-    }
-
-    .card p {
-      font-size: 14px;
-      color: #666;
-    }
-
-    /* Responsive Navbar */
-    @media (max-width: 768px) {
-      nav ul {
-        flex-direction: column;
-        align-items: center;
-        gap: 10px;
-      }
+    button {
+      background: none;
+      border: none;
+      cursor: pointer;
     }
   </style>
-
-  <!-- Font Awesome for icons -->
 </head>
 <body>
-  <!-- Navbar -->
-  <header>
-    <img src="logo.png" alt="Fruit Logo">
-    <nav>
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Shop</a></li>
-        <li><a href="#">Shop Detail</a></li>
-        <li><a href="#">Checkout</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
+  <!-- Button with animation -->
+  <button id="downloadBtn">
+    <lottie-player
+      id="downloadAnim"
+      src="https://assets8.lottiefiles.com/packages/lf20_kcsr6fcp.json" 
+      background="transparent"
+      speed="1"
+      style="width: 100px; height: 100px;"
+      loop
+    ></lottie-player>
+  </button>
 
-  <!-- Services Section -->
-  <section class="services">
-    <div class="card">
-      <i class="fas fa-car"></i>
-      <h3>Free Shipping</h3>
-      <p>Free on order over $300</p>
-    </div>
-    <div class="card">
-      <i class="fas fa-shield-alt"></i>
-      <h3>Security Payment</h3>
-      <p>100% security payment</p>
-    </div>
-    <div class="card">
-      <i class="fas fa-exchange-alt"></i>
-      <h3>30 Day Return</h3>
-      <p>30 day money can return back</p>
-    </div>
-    <div class="card">
-      <i class="fas fa-phone"></i>
-      <h3>24/7 Support</h3>
-      <p>Support every time fast</p>
-    </div>
-  </section>
+  <script>
+    const anim = document.getElementById("downloadAnim");
+    const btn = document.getElementById("downloadBtn");
+
+    let isPlaying = false;
+
+    btn.addEventListener("click", () => {
+      if (!isPlaying) {
+        anim.play();
+        isPlaying = true;
+      } else {
+        anim.stop();
+        isPlaying = false;
+      }
+    });
+  </script>
 </body>
 </html>

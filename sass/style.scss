@@ -1,4 +1,3 @@
-
 @import "./mixins";
 @import "./variable";
 @import "./footer";
@@ -14,82 +13,301 @@
 
 
 
-*{
+* {
     margin: 0;
     scroll-behavior: smooth;
     font-family: 'Roboto', 'Open Sans', Arial, sans-serif;
 }
 
- @media (max-width: 1440px) and (min-width:1290px) {
-     .value-page{
-        height: 70vh; 
-        .value-page-2{
-        height: 35vh;
-       }
-    } 
+// Responsive computer
 
-    .product-page{
+
+@media (max-width: 1440px) and (min-width:1290px) {
+    .value-page {
+        height: 70vh;
+
+        .value-page-2 {
+            height: 35vh;
+        }
+    }
+
+    .product-page {
         height: 140vh;
-        .product-page-2{
+
+        .product-page-2 {
             height: 85%;
-            .card-product{
+
+            .card-product {
                 height: 53vh;
             }
         }
     }
 
-    .show-product{
+    .show-product {
         height: 100vh;
-        .group-product-show{
+
+        .group-product-show {
             height: 60%;
         }
     }
 
-    .product-vegetable{
+    .product-vegetable {
         height: 160vh;
-        .group-product-vegetable{
+
+        .group-product-vegetable {
             height: 75%;
-            .card-producr-vegetable{
+
+            .card-producr-vegetable {
                 height: 55vh;
             }
         }
     }
 
-    .big-page-product{
+    .big-page-product {
         height: 70vh;
     }
 
 
-    .Bestseller-Product{
+    .Bestseller-Product {
         height: 100vh;
-        .group-bestseller-product{
+
+        .group-bestseller-product {
             height: 80%;
-            .group-bestseller-product-2{
-                 height: 70%;
-                 .card-bestseller-product{
+
+            .group-bestseller-product-2 {
+                height: 70%;
+
+                .card-bestseller-product {
                     height: 25vh;
-                 }
+                }
             }
         }
     }
 
-    .feedback-page{
+    .feedback-page {
         height: 100vh;
-        .group-feedback-customer{
+
+        .group-feedback-customer {
             height: 90%;
-            .group-feedback-customer-2{
+
+            .group-feedback-customer-2 {
                 height: 75%;
-                .card-feedback{
+
+                .card-feedback {
                     height: 30vh;
                 }
+            }
+
+        }
+    }
+
+    footer {
+        height: 60vh;
+    }
+
+
+}
+
+//   Responsive latop
+
+@media (max-width: 900px) and (min-width:700px) {
+    .first-container {
+        .first-container-2 {
+            .f-c-card-page {
+                .nav-links {
+                    scroll-behavior: smooth;
+                    background: linear-gradient(to right, orange, yellow);
+                    display: none;
+                    flex-direction: column;
+                    width: 30%;
+                    justify-content: start;
+                    text-align: start;
+                    position: absolute;
+                    top: 108px;
+                    right: 0;
+                    border-radius: 20px;
+
+                    li {
+                        margin: 15px 0;
+                    }
+                }
+
+                .nav-links.active {
+                    display: flex;
+                }
+            }
+
+            .hamburger {
+                display: flex;
+                border: 2px solid gray;
+                border-radius: 10px;
+                padding: 5px;
+            }
+
+            .f-c-icon {
+                display: none;
+            }
+        }
+
+    }
+    .header-page {
+        height: 60vh;
+
+        .header-page-bg {
+            height: 60vh;
+
+            .header-page-2 {
+                .header-page-text-1 {
+                    width: 60%;
+                    h5 {
+                        font-size: 2vh;
+                    }
+
+                    h1 {
+                        font-size: 5vh;
+                    }
+                }
+                .header-page-img img{
+                    width: 300px;
+                }
+            }
+        }
+    }
+
+
+    .value-page {
+        height: 70vh;
+        display: flex;
+        align-items:start;
+        padding-top: 100px;
+        .value-page-2 {
+            height: 40%;
+            display: flex;
+            align-items: start;
+            flex-wrap: wrap;
+            .value-page-2-card{
+                width: 40%;
+            }
+        }
+    }
+
+    .product-page {
+        height: 180vh;
+
+        .product-page-2 {
+            height: 97%;
+            display: flex;
+            justify-content: space-around;
+
+            .card-product {
+                height: 41vh;
+                width: 45%;
+            }
+        }
+    }
+
+    .show-product {
+        height: 90vh;
+        display: flex;
+        align-items: start;
+        padding-top: 200px;
+        .group-product-show {
+            height: 40%;
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+            .group-card-product{
+                width: 40%;
+               
+            }
+            .group-card-product-2{
+                width: 40%;
+            }
+            .group-card-product-3{
+                width: 40%;
             }
             
         }
     }
 
-    footer{
-        height: 60vh;
+    .product-vegetable {
+        height: 200vh;
+
+        .group-product-vegetable {
+            height: 85%;
+            display: flex;
+            justify-content: space-around;
+
+            .card-producr-vegetable {
+                height: 40vh;
+                width: 45%;
+
+            }
+        }
     }
 
-    
+    .big-page-product {
+        height: 80vh;
+
+        .group-big-page-product {
+            display: flex;
+            flex-direction: column;
+            .group-big-page-product-text {
+                width: 85%;
+                h1 {
+                    font-size: 5vh;
+                }
+            }
+
+            .group-big-page-product-img {
+                width: 75%;
+                height: 63%;
+            }
+
+        }
     }
+
+
+    .Bestseller-Product {
+        height: 120vh;
+
+        .group-bestseller-product {
+            height: 85%;
+
+            .group-bestseller-product-2 {
+                height: 70%;
+                display: flex;
+                justify-content: space-around;
+                .card-bestseller-product {
+                    height: 20vh;
+                    width: 45%;
+                    
+                }
+            }
+        }
+    }
+
+    .feedback-page {
+        height: 80vh;
+
+        .group-feedback-customer {
+            height: 90%;
+
+            .group-feedback-customer-2 {
+                height: 60%;
+
+                .card-feedback {
+                    height: 20vh;
+                }
+            }
+
+        }
+    }
+
+    footer {
+        height: 53vh;
+    }
+
+
+}

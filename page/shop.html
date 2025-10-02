@@ -20,7 +20,7 @@
         <img src="/image/1.png" alt="#" />
       </div>
       <div class="f-c-card-page">
-        <ul>
+        <ul class="nav-links">
           <li><a href="../index.html">Home</a></li>
           <li><a href="../page/shop.html">Shop</a></li>
           <li><a href="/page/detail.html">Shop Ditail</a></li>
@@ -32,8 +32,21 @@
         <i class="bx bxs-shopping-bag"></i>
         <i class="bx bxs-user-circle"></i>
       </div>
+      <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
     </div>
   </nav>
+    <script>
+    const hamburger = document.querySelector('.hamburger');
+    const navLinks = document.querySelector('.nav-links');
+
+    hamburger.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+    });
+  </script>
 
   <!-- header-page -->
 

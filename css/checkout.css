@@ -116,6 +116,19 @@ footer .card-footer-3 h5 p {
 .first-container .f-c-icon i:hover {
   color: green;
 }
+.first-container .hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+.first-container .hamburger span {
+  height: 5px;
+  width: 35px;
+  background: purple;
+  margin: 4px 0;
+  border-radius: 3px;
+  transition: 0.3s;
+}
 
 .header-page {
   background-image: url(/image/25.png);
@@ -291,5 +304,53 @@ footer .card-footer-3 h5 p {
   }
   footer {
     height: 60vh;
+  }
+}
+@media (max-width: 900px) and (min-width: 700px) {
+  .first-container .first-container-2 .f-c-card-page .nav-links {
+    scroll-behavior: smooth;
+    background: linear-gradient(to right, orange, yellow);
+    display: none;
+    flex-direction: column;
+    width: 30%;
+    justify-content: start;
+    text-align: start;
+    position: absolute;
+    top: 108px;
+    right: 0;
+    border-radius: 20px;
+  }
+  .first-container .first-container-2 .f-c-card-page .nav-links li {
+    margin: 15px 0;
+  }
+  .first-container .first-container-2 .f-c-card-page .nav-links.active {
+    display: flex;
+  }
+  .first-container .first-container-2 .hamburger {
+    display: flex;
+    border: 2px solid gray;
+    border-radius: 10px;
+    padding: 5px;
+  }
+  .first-container .first-container-2 .f-c-icon {
+    display: none;
+  }
+  .header-page {
+    height: 20vh;
+  }
+  .header-page .header-page-2 {
+    height: 20vh;
+  }
+  .header-page .header-page-2 h5 {
+    font-size: 2vh;
+  }
+  .header-page .header-page-2 h2 {
+    font-size: 3vh;
+  }
+  .checkout-page {
+    height: 120vh;
+  }
+  footer {
+    height: 53vh;
   }
 }/*# sourceMappingURL=checkout.css.map */

@@ -1,11 +1,9 @@
 .big-page-product{
     height: 100vh;
-    background-color: cadetblue;
     @include center;
     .group-big-page-product{
         width: 100%;
         height: 100%;
-        
         background-color: orange;
         @include center-around;
         .group-big-page-product-text{
