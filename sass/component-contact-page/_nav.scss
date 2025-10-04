@@ -1,53 +1,81 @@
-*{
+* {
     margin: 0;
 }
-.first-container{
+
+.first-container {
     @include position-nav;
-    background-color:$red-color;
+    background-color: $red-color;
     box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
-    .first-container-2{
+
+    .first-container-2 {
         background: $two-color;
         border-radius: 0px 500px;
         @include center-around;
     }
-    .f-c-card-page{
-        ul{
+
+    .f-c-card-page {
+        ul {
             display: flex;
             gap: 40px;
             list-style: none;
-            a{
+
+            a {
+                text-transform: uppercase;
                 text-decoration: none;
                 font-size: 4vh;
-                &:hover{
-                    color: $red-color;
+                position: relative;
+                transition: color 0.3s ease;
+
+                &:hover {
+                    color: $green-color;
+                }
+
+                &::after {
+                    content: "";
+                    position: absolute;
+                    left: 50%;
+                    bottom: -5px;
+                    width: 0;
+                    height: 4px;
+                    background: #0ac260;
+                    transition: all 0.3s ease;
+                    transform: translateX(-50%);
+                }
+
+                &:hover::after {
+                    width: 100%;
                 }
             }
         }
     }
+
     .f-c-img img {
         @include h-w-100vh;
         border-radius: 50%;
         border: 3px solid green;
     }
-    .f-c-icon{
-        color:$orangred-color;
+
+    .f-c-icon {
+        color: $orangred-color;
         font-size: 40px;
-        i:hover{
+
+        i:hover {
             color: $green-color;
         }
     }
+
     .hamburger {
-      display: none;
-      flex-direction: column;
-      cursor: pointer;
+        display: none;
+        flex-direction: column;
+        cursor: pointer;
     }
 
     .hamburger span {
-      height: 5px;
-      width: 35px;
-      background: purple;
-      margin: 4px 0;
-      border-radius: 3px;
-      transition: 0.3s;
+        height: 5px;
+        width: 35px;
+        background: purple;
+        margin: 4px 0;
+        border-radius: 3px;
+        transition: 0.3s;
     }
 }

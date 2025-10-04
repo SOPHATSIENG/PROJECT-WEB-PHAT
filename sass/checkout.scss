@@ -11,6 +11,7 @@
     font-family: 'Roboto', 'Open Sans', Arial, sans-serif;
 }
 
+//   Responsive computer
 
 @media (max-width: 1440px) and (min-width:1290px) {
     .checkout-page{
@@ -22,6 +23,8 @@
     }
     
  }
+
+ //   Responsive laptop
 
   @media (max-width: 900px) and (min-width:700px) {
     .first-container{
@@ -38,7 +41,7 @@
                         position: absolute;
                         top: 108px;
                         right: 0;
-                        border-radius: 20px;
+                        border-radius: 0px 0px 20px 20px;
                         li {
                             margin: 15px 0;
                         }
@@ -84,6 +87,104 @@
 
     footer{
         height: 53vh;
+    }
+
+    
+}
+
+//   Responsive phone
+
+  @media (max-width: 500px) and (min-width:200px) {
+    .first-container{
+        .first-container-2{
+                .f-c-card-page{
+                    .nav-links {
+                        scroll-behavior: smooth;
+                        background: linear-gradient(to right, orange, yellow);
+                        display: none;
+                        flex-direction: column;
+                        width: 45%;
+                        justify-content: start;
+                        text-align: start;
+                        position: absolute;
+                        top: 108px;
+                        right: 0;
+                        border-radius: 0px 0px 20px 20px;
+                        li {
+                            margin: 15px 0;
+                        }
+                    }
+                    .nav-links.active {
+                        display: flex;
+                    }
+                }
+                .hamburger {
+                        display: flex;
+                        border: 2px solid gray;
+                        border-radius: 10px;
+                        padding: 5px;
+                }
+                .f-c-icon{
+                    display: none;
+                }
+        }
+        
+    }
+
+    .header-page {
+        height: 20vh;
+
+        .header-page-2 {
+            height: 20vh;
+
+            h5 {
+                font-size: 2vh;
+            }
+
+            h2 {
+                font-size: 3vh;
+            }
+
+        }
+    }
+    
+
+    .checkout-page{
+        height: 280vh;
+        .group-all-element{
+            display: flex;
+            flex-direction: column;
+            .table-checkout{
+                width: 100%;
+                table{
+                    width: 95%;
+                }
+            }
+        }
+    }
+
+    footer {
+        height: 110vh;
+        .footer-page {
+            display: flex;
+            flex-direction: column;
+            height: 30vh;
+            .cardfooter-2 {
+                padding-top: 50px;
+                display: flex;
+                justify-content: space-between;
+                flex-wrap: wrap;
+                height: 100%;
+                .groud-kind-of-footer {
+                    width: 100%;
+                }
+
+            }
+
+            .card-footer-3 {
+               display: none;
+            }
+        }
     }
 
     
